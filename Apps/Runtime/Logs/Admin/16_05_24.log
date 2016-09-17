@@ -1,0 +1,849 @@
+[ 2016-05-24T12:39:45+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012202s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.216935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.217028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.040179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040334s ]
+
+[ 2016-05-24T12:39:49+08:00 ] 127.0.0.1 /Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029965s ]
+
+[ 2016-05-24T12:39:53+08:00 ] 127.0.0.1 /Admin/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+SQL: SHOW COLUMNS FROM `exp_admin` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `exp_admin` WHERE `admin_account` = 'ujsexpress01' AND `admin_password` = '239df74abd9b9585fda68d73e9f44c0f'  [ RunTime:0.0245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2016-05-24T12:39:57+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002652s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.2860s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0562s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0542s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0555s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0559s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0342s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 16 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0364s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0379s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0356s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0355s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0517s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0311s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0321s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0426s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.270170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.270306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001630s ]
+
+[ 2016-05-24T12:43:44+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007580s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013782s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0607s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0548s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0588s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0547s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0575s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0606s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0320s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 19 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0342s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0338s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0525s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.201748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010404s ]
+
+[ 2016-05-24T12:44:37+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-05-24T12:44:37+08:00 ] 127.0.0.1 /Admin/Apps/Public/bootstrap/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004730s ]
+ERR: 无法加载控制器:Apps
+
+[ 2016-05-24T12:44:37+08:00 ] 127.0.0.1 /Admin/mint/?js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003784s ]
+ERR: 无法加载控制器:Mint
+
+[ 2016-05-24T12:44:44+08:00 ] 127.0.0.1 /Admin/Apps/Public/bootstrap/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002802s ]
+ERR: 无法加载控制器:Apps
+
+[ 2016-05-24T12:45:01+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+
+[ 2016-05-24T12:45:27+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0486s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0583s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0484s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0499s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0527s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0268s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0328s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0284s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0282s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0317s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2016-05-24T12:46:12+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+INFO: [ action_begin ] --START--
+
+[ 2016-05-24T12:46:35+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.031334s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.031448s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0489s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0493s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0265s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0292s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0488s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003075s ]
+
+[ 2016-05-24T12:48:06+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+INFO: [ test_begin ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.000542s ]
+INFO: [ test_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0504s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0555s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0515s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0514s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0482s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0357s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000577s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000810s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002765s ]
+
+[ 2016-05-24T12:51:16+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.056574s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.056645s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0561s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0597s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0656s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0561s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0581s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0559s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0330s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0351s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0366s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0359s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0372s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0521s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0297s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002742s ]
+
+[ 2016-05-24T12:52:18+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.000578s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0546s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0525s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0516s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0523s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0529s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0525s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0297s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0322s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0496s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2016-05-24T12:52:28+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.000636s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0572s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0538s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0505s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0528s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0514s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0256s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0311s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0309s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0288s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0492s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2016-05-24T12:53:24+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.000571s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0559s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0559s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0605s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0595s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0581s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0572s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0557s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0326s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0361s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0361s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0363s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0535s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0387s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002603s ]
+
+[ 2016-05-24T12:56:18+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.000707s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0514s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0783s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0514s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0503s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0495s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0262s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0288s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0463s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0279s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2016-05-24T19:21:41+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028307s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.057466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.086089s ]
+INFO: [ stop_server ] --START--
+INFO: Run Admin\Behaviors\TestBehavior [ RunTime:0.025014s ]
+INFO: [ stop_server ] --END-- [ RunTime:0.025115s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0372s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0494s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0499s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0885s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0536s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0502s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0264s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0429s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0286s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.021561s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.021621s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.478899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.479056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.056389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.056519s ]
+
+[ 2016-05-24T19:22:09+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0602s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0548s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(order_time)) ) LIMIT 1   [ RunTime:0.0508s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0274s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\wamp\Apache24\htdocs\express\Apps\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY)= date(FROM_UNIXTIME(user_regtime)) ) LIMIT 1   [ RunTime:0.0311s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0485s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 0 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 1 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 2 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 3 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 4 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 5 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( DATE_SUB(curdate(),INTERVAL 6 DAY) = date(FROM_UNIXTIME(register_time)) ) LIMIT 1   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 198 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 207 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 208 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 209 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003779s ]
+

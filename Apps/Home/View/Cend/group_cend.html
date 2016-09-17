@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="" name="Keywords" />
+<meta content="" name="Description" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <base target="_blank" /> -->
+<link href="{$Think.const.BOOT_URL}css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="{$Think.const.CSS_URL}style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{$Think.const.BOOT_URL}js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.BOOT_URL}js/bootstrap.js"></script>
+<title>组团代寄</title>
+<style>
+.select_one{
+    width:100%;
+    border:1px solid #44B549;
+    -webkit-height:35px;
+    -webkit-line-height:35px;
+    height:35px;
+}
+.select_one option{
+    width:100%;
+    border-bottom:1px solid #eee;
+    -webkit-height:35px;
+    -webkit-line-height:35px;
+    height:35px;
+    line-height:35px;
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<form action="__MODULE__/Cend/group_docend" method="post">
+<input type="button" onclick="javascript:history.back(-1);" value="&laquo;" class="back tcm" />
+<div class="center-block w11">
+    <div class="input-group mt10 w12"><input type="hidden" class="form-control" name="gid" value="{$gid}"/></div>
+    <div class="input-group mt10 w12"><input type="text" class="form-control" name="" disabled="disabled" value="申请人手机号码：{$phone}，申请单号：{$gid}"/></div>
+	<div class="input-group mt10 w12"><input type="text" placeholder="真实姓名" class="form-control" name="realname" required /></div>
+	<div class="input-group mt10 w12">
+    <input type="text" placeholder="手机号" class="form-control" name="phone" required /></div>
+    <div class="input-group mt10 w12">
+    <div class="col-xs-6">
+        <select class="select_one" name="get_day">
+            <option value="">取件日期</option>
+            <option value="{$today}">今天</option>
+            <option value="{$nextday}">明天</option>
+            <option value="{$afterday}">后天</option>
+        </select>
+    </div>
+    <div class="col-xs-6">
+        <select class="select_one" name="get_time" placeholder="取件时间">
+            <option value="">取件时间</option>
+            <option value="12:30">上午12:30</option>
+            <option value="21:30">下午21:30</option>
+        </select>
+    </div>
+    </div>
+    <div class="input-group mt10 w12"><textarea placeholder="您的地址，请写好自己所在的区和楼栋，以便取件" rows="5" class="form-control" name="address"></textarea></div>
+	<div class="input-group mt10 w12"><textarea placeholder="您的寄件地址" rows="5" class="form-control" name="toaddress"></textarea></div>
+    <div class="input-group mt10 w12 mb20"><input type="submit" value="提交订单" class="btn w12 bcm tcw" /></div>
+</div>
+</form>
+
+</body>
+
+</html>

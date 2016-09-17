@@ -1,0 +1,39 @@
+<extend name="Public:base" />
+<block name="title"><title>送货订单管理</title></block>
+<block name="heads">
+<style>
+.table tr td,
+.table tr th{
+	text-align:center;
+}
+</style>
+</block>
+<block name="content">
+	<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<th width=60>订单编号</th>
+		<th width=60>用户姓名</th>
+		<th width=100>手机号码</th>
+		<th width=200>送货地址1</th>
+		<th width=200>送货地址2</th>
+		<th width=200>寄件人地址1</th> 
+		<th width=200>寄件人地址2</th> 
+		<th width=150>取单时间</th>
+		<th width=150>时间</th>
+	</tr>
+	<volist name="lcendlist" id="vo">
+	<tr>
+		<td>{$vo.lcend_id}</td>
+		<td>{$vo.lcend_firstrealname}|{$vo.lcend_secondrealname}</td>
+		<td>{$vo.lcend_firstphone}|{$vo.lcend_secondphone}</td>
+		<td>{$vo.lcend_firsttoaddress}</td>
+		<td>{$vo.lcend_secondtoaddress}</td>
+		<td>{$vo.lcend_firstaddress}</td>
+		<td>{$vo.lcend_secondaddress}</td>
+		<td>{$vo.lcend_gtime|date='Y-m-d H:i:s',###}</td>
+		<td>{$vo.lcend_time|date='Y-m-d H:i:s',###}</td>
+	</tr>
+	</volist>
+	</table>
+	{$page}<!--分页-->
+</block>		

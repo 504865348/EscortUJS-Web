@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="" name="Keywords" />
+        <meta content="" name="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <base target="_blank" /> -->
+      <link href="{$Think.const.BOOT_URL}css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+      <link href="{$Think.const.CSS_URL}style.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="{$Think.const.BOOT_URL}js/jquery.js"></script>
+		<script type="text/javascript" src="{$Think.const.BOOT_URL}js/bootstrap.js"></script>
+        <title>添加小区域</title>
+		<style>
+		.table tr td,
+		.table tr th{
+			text-align:center;
+		}
+		</style>
+    </head>
+    <body>
+        <form action="__MODULE__/BaseParameter/doSchoolAreaAdd" method="post">
+			<div class="head">
+				<!--模版表达式的定义规则为：模块@主题/控制器/操作 -->
+				<include file="Public/head" />
+			</div>
+			<div class="row">
+				<div class="navside col-md-2">
+					<include file="Public/navside" />
+				</div>
+				<div class="article col-md-10">
+					
+						<div class="w11 center-block">
+							<div class="input-group mt10 w12"><input type="text" placeholder="区域" class="form-control" name="school_area_name" required /></div>
+							<div class="input-group mt10 w12 mb20"><input type="submit" value="添加" class="btn w12 bcm tcw" /></div>
+						</div>
+				
+				</div>
+			</div>
+			<div class="foot">
+				<include file="Public/foot" />
+			</div>
+        </form>
+    </body>
+</html>

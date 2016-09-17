@@ -1,0 +1,35 @@
+[ 2016-05-16T18:19:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.053388s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.160831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.214808s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0372s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751001019' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0217s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.022034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.022161s ]
+NOTIC: [8] Undefined variable: user_id E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+NOTIC: [8] Undefined variable: user_phone E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+NOTIC: [8] Undefined variable: name E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.138208s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.138340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.047041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.047181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.124429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.124660s ]
+

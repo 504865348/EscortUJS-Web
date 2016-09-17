@@ -1,0 +1,798 @@
+[ 2016-02-24T18:34:01+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002822s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010662s ]
+NOTIC: [8] Undefined index: account E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002219s ]
+
+[ 2016-02-24T18:34:04+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002994s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004460s ]
+
+[ 2016-02-24T18:34:10+08:00 ] 127.0.0.1 /Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005285s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010400s ]
+SQL: SHOW COLUMNS FROM `exp_admin` [ RunTime:0.0206s ]
+NOTIC: [2] array_merge(): Argument #1 is not an array E:\phpworkspace\express\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `exp_admin`  [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003660s ]
+
+[ 2016-02-24T18:34:13+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003476s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011269s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0265s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0217s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0299s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000497s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000998s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002276s ]
+
+[ 2016-02-24T18:34:20+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002036s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005498s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0284s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0283s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0241s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0287s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000614s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001292s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002730s ]
+
+[ 2016-02-24T18:34:21+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002945s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008845s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0256s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0249s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000637s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001300s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004122s ]
+
+[ 2016-02-24T18:34:22+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006366s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0341s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0210s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0247s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0258s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000512s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001623s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002317s ]
+
+[ 2016-02-24T18:34:23+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005380s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010765s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0255s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0250s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0221s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001354s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003564s ]
+
+[ 2016-02-24T18:34:24+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006787s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0218s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0219s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000654s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002718s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003877s ]
+
+[ 2016-02-24T18:34:25+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005714s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014221s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0209s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0363s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0230s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002420s ]
+
+[ 2016-02-24T18:34:25+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002436s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008263s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0196s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0254s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0383s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0318s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0285s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000533s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002408s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005690s ]
+
+[ 2016-02-24T18:34:26+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002664s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012154s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0277s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0253s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0249s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000509s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001171s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003147s ]
+
+[ 2016-02-24T18:34:27+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002845s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008855s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0256s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0246s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0241s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003072s ]
+
+[ 2016-02-24T18:34:28+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002750s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010743s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0309s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0256s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0225s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0296s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004653s ]
+
+[ 2016-02-24T18:34:50+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001578s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005975s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0195s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0205s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0197s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0204s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0197s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001913s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013611s ]
+
+[ 2016-02-24T18:34:58+08:00 ] 127.0.0.1 /Admin/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001992s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005333s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+NOTIC: [8] Undefined variable: account E:\phpworkspace\express\Apps\Runtime\Cache\Admin\00de9b0f709db9d224ab0e1e0f69240b.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003466s ]
+

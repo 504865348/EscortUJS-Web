@@ -1,0 +1,31 @@
+<extend name="Public:base" />
+<block name="title"><title>组团代寄</title></block>
+<block name="heads">
+<style>
+.table tr td,
+.table tr th{
+	text-align:center;
+}
+</style>
+</block>
+<block name="content">
+	<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<th width=60>订单编号</th>
+		<th width=100>手机号码</th>
+		<th width=60>订单列</th>
+		<th width=60>详情</th>
+		<th width=150>时间</th>
+	</tr>
+	<volist name="glists" id="vo">
+	<tr>
+		<td>{$vo.glist_id}</td>
+		<td>{$vo.glist_phone}</td>
+		<td>{$vo.glist_gids}</td>
+		<td><a href="__APP__/Admin/OrderManage/group/id/{$vo.glist_id}">详情</a></td>
+		<td>{$vo.glist_time|date='Y-m-d H:i:s',###}</td>
+	</tr>
+	</volist>
+	</table>
+	{$page}<!--分页-->
+</block>		

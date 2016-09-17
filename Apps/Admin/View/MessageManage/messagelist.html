@@ -1,0 +1,28 @@
+<extend name="Public:base" />
+<block name="title"> <title>后台管理</title></block>
+<block name="heads">
+	<style>
+	.table tr td,
+	.table tr th{
+		text-align:center;
+	}
+</style>
+</block>
+<block name="content">
+	<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<th width=100>用户姓名</th>
+		<th width=100>手机号码</th>
+		<th width=450>留言内容</th> 
+		<th width=150>留言时间</th> 
+	</tr>
+	<volist name="messagelist" id="vo">
+	<tr>
+		<td>{$vo.user_realname}</td>
+		<td>{$vo.user_phone}</td>
+		<td>{$vo.content}</td>
+		<td>{$vo.subtime|date='y-m-d H:i:s',###}</td>
+	</tr>
+	</volist>
+	</table>
+</block>

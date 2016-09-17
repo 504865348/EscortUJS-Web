@@ -1,0 +1,80 @@
+[ 2016-03-13T22:18:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.058946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010570s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.046972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.059007s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0269s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0297s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.026659s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027487s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.878618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.879361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.052746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053406s ]
+
+[ 2016-03-13T22:19:20+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002066s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005346s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0226s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000571s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001492s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004089s ]
+
+[ 2016-03-13T22:20:01+08:00 ] 127.0.0.1 /Home/user/index/myinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002755s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009577s ]
+ERR: 无法加载控制器:User
+
+[ 2016-03-13T22:20:12+08:00 ] 127.0.0.1 /Home/User/index/myinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002416s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008067s ]
+ERR: 无法加载控制器:User
+

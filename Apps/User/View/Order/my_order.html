@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="" name="Keywords" />
+<meta content="" name="Description" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <base target="_blank" /> -->
+<link href="{$Think.const.BOOT_URL}css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="{$Think.const.CSS_URL}style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{$Think.const.BOOT_URL}js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.BOOT_URL}js/bootstrap.js"></script>
+<title>我的订单</title>
+<style>
+	.div_one{
+	background:#fff;
+		padding:5px 10px;
+		margin:5px 0;
+		border-bottom:1px solid #eee;
+	}
+	.title_one{
+		color:#44B549;
+		margin-bottom:5px;
+	}
+	.title_one h5{
+		display:inline-block;
+		margin-left:10px;
+	}
+	.div_two{
+		position:relative;
+		padding:2px 5px;
+		border-bottom:1px solid #eee;
+		
+	}
+	.span_one{
+		display:inline-block;
+	}
+	.span_two{
+		display:inline-block;
+		position:absolute;
+		right:0;
+		color:#44B549;
+	}
+</style>
+
+</head>
+
+<body style="background:#eee;">
+
+<form action="" method="post">
+	<input type="button" onclick="javascript:history.back(-1);" value="&laquo;" class="back tcm" />
+	<!--循环读出订单，用户收到的快递-->
+	<div class="title_one"><span class="glyphicon glyphicon-th-list"></span><h5>我收到的快递<h5></div>
+	<volist name="orderlist" id="vo">
+		<div class="w12 center-block div_one">
+			<div class="w12 div_two">
+				<span class="span_one">{$vo.order_time|date='Y-m-d h:i:s',###}</span><!--订单提交时间-->
+				<span class="span_two">{$vo.status_name}</span><!--订单状态-->
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">
+				订单编号：&nbsp;&nbsp;<span class="tcm">{$vo.order_id}</span>
+				</span>
+				<span class="span_two"><a href="__APP__/User/Order/delete/id/{$vo.order_id}/pnum/{$vo.order_phone}" style="color:red;">取消订单</a>
+				</span>					
+			</div>
+			<div class="div_three mt10 mb10">
+			{$vo.order_comment}
+			</div>
+		</div>
+	</volist>
+	<!--寄出快递-->
+	<div class="title_one"><span class="glyphicon glyphicon-th-list"></span><h5>我寄出的快递</h5></div>
+	<volist name="cendlist" id="vo">
+		<div class="w12 center-block div_one">
+			<div class="w12 div_two">
+				<span class="span_one">{$vo.register_time|date='Y-m-d H:i:s',###}</span><!--订单提交时间-->
+				<span class="span_two">{$vo.status_name}</span><!--订单状态-->
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">
+				订单编号：&nbsp;&nbsp;<span class="tcm">{$vo.cend_id}</span>
+				</span>
+				<span class="span_two"><a href="__APP__/User/Order/cend_delete/id/{$vo.cend_id}/pnum/{$vo.phone}" style="color:red;">取消订单</a>
+				</span>					
+			</div>
+			<div class="div_three mt10 mb10">
+			{$vo.address}
+			</div>
+		</div>
+	</volist>
+	<!--情侣代寄-->
+	<div class="title_one"><span class="glyphicon glyphicon-th-list"></span><h5>情侣代寄</h5></div>
+	<volist name="lcendlist" id="vo">
+		<div class="w12 center-block div_one">
+			<div class="w12 div_two">
+				<span class="span_one">{$vo.lcend_time|date='Y-m-d H:i:s',###}</span>
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">
+				订单编号：&nbsp;&nbsp;<span class="tcm">{$vo.lcend_id}</span>
+				</span>			
+			</div>
+			<div class="div_three mt10 mb10">
+			{$vo.lcend_firstaddress}<br/>
+			{$vo.lcend_secondaddress}
+			</div>
+		</div>
+	</volist>
+	<!--组团代寄-->
+	<div class="title_one"><span class="glyphicon glyphicon-th-list"></span><h5>组团代寄</h5></div>
+	<volist name="glists" id="vo">
+		<div class="w12 center-block div_one">
+			<div class="w12 div_two">
+				<span class="span_one">{$vo.glist_time|date='Y-m-d H:i:s',###}</span>
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">
+				订单编号：&nbsp;&nbsp;<span class="tcm">{$vo.glist_id}</span>
+				</span>			
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">
+				订单链接：&nbsp;&nbsp;<span class="tcm"><a href="__APP__/Home/Cend/apply_success/gid/{$vo.glist_id}">链接地址</a></span>
+				</span>			
+			</div>
+			<div class="div_three mt10 mb10">
+			{$vo.glist_count}
+			</div>
+		</div>
+	</volist>
+	<div class="title_one"><span class="glyphicon glyphicon-th-list"></span><h5>购买的东西<h5></div>
+	<volist name="shoplist" id="vo">
+		<div class="w12 center-block div_one">
+			<div class="w12 div_two">
+				<span class="span_one">{$vo.shop_time|date='Y-m-d h:i:s',###}</span><!--订单提交时间-->
+				<span class="span_two">{$vo.status_name}</span><!--订单状态-->
+			</div>
+			<div class=" div_two mt10 mb10">
+				<span class="span_one">订单编号：&nbsp;&nbsp;
+				<span class="tcm">{$vo.shop_id}</span>
+				</span>
+				</span>					
+			</div>
+			<div class="div_three mt10 mb10">
+			{$vo.shop_comment}
+			</div>
+		</div>
+	</volist>
+</form>
+</body>
+
+</html>

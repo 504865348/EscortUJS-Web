@@ -1,0 +1,434 @@
+[ 2016-02-21T21:18:59+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004851s ]
+NOTIC: [8] Undefined index: account E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001583s ]
+
+[ 2016-02-21T21:19:03+08:00 ] 127.0.0.1 /Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002821s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003115s ]
+
+[ 2016-02-21T21:19:07+08:00 ] 127.0.0.1 /Admin/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003781s ]
+SQL: SHOW COLUMNS FROM `exp_admin` [ RunTime:0.0279s ]
+NOTIC: [2] array_merge(): Argument #1 is not an array E:\phpworkspace\express\ThinkPHP\Library\Think\Model.class.php 第 1814 行.
+SQL: SELECT * FROM `exp_admin`  [ RunTime:0.0264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002676s ]
+
+[ 2016-02-21T21:19:10+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005161s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0311s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0271s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0310s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0273s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0276s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000868s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001689s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006328s ]
+
+[ 2016-02-21T21:19:38+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004017s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =0 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =1 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =2 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =3 ) LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =4 ) LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =5 ) LIMIT 1   [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_order` WHERE ( curdate() - date(FROM_UNIXTIME(order_time)) =6 ) LIMIT 1   [ RunTime:0.0216s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0212s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' E:\phpworkspace\express\Apps\Admin\Controller\IndexController.class.php 第 28 行.
+SQL: SELECT COUNT(user_id) AS tp_count FROM `exp_user` LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 0 ) LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 1 ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 2 ) LIMIT 1   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 3 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 4 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 5 ) LIMIT 1   [ RunTime:0.0278s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_user` WHERE ( curdate() - date(FROM_UNIXTIME(user_regtime)) = 6 ) LIMIT 1   [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0217s ]
+SQL: SELECT `server_content`,count(order_id) as num FROM `exp_order` INNER JOIN exp_server on exp_server.server_id=exp_order.order_server_id  GROUP BY order_server_id  [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =0 ) LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =1 ) LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =2 ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =3 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =4 ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =5 ) LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `exp_cend` WHERE ( curdate() - date(FROM_UNIXTIME(register_time)) =6 ) LIMIT 1   [ RunTime:0.0242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 190 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 199 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 200 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Use of undefined constant server_content - assumed 'server_content' E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+NOTIC: [8] Undefined offset: 2 E:\phpworkspace\express\Apps\Runtime\Cache\Admin\859e94050170c96367cb52465a51a945.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001868s ]
+
+[ 2016-02-21T21:19:40+08:00 ] 127.0.0.1 /Admin/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001264s ]
+NOTIC: [8] Undefined variable: account E:\phpworkspace\express\Apps\Runtime\Cache\Admin\00de9b0f709db9d224ab0e1e0f69240b.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005027s ]
+
+[ 2016-02-21T21:19:41+08:00 ] 127.0.0.1 /Admin/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001108s ]
+NOTIC: [8] Undefined variable: account E:\phpworkspace\express\Apps\Runtime\Cache\Admin\00de9b0f709db9d224ab0e1e0f69240b.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001921s ]
+
+[ 2016-02-21T21:19:52+08:00 ] 127.0.0.1 /Admin/UserManage/userlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003724s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `exp_user` ORDER BY user_id desc  [ RunTime:0.0316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005674s ]
+
+[ 2016-02-21T21:20:00+08:00 ] 127.0.0.1 /Admin/OrderManage/orderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002777s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007505s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `exp_status` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `exp_order` INNER JOIN exp_status on exp_order.order_status_id=exp_status.status_id  ORDER BY order_id desc  [ RunTime:0.0221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000667s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001858s ]
+
+[ 2016-02-21T21:20:08+08:00 ] 127.0.0.1 /Admin/orderManage/ordercontent/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006303s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `exp_order` WHERE `order_id` = 6 LIMIT 1   [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Undefined variable: account E:\phpworkspace\express\Apps\Runtime\Cache\Admin\cad83b8523726c46d784282372d08e08.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002052s ]
+
+[ 2016-02-21T21:20:56+08:00 ] 127.0.0.1 /Admin/orderManage/ordercontent/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000398s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004745s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `exp_order` WHERE `order_id` = 1 LIMIT 1   [ RunTime:0.0354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001023s ]
+NOTIC: [8] Undefined variable: account E:\phpworkspace\express\Apps\Runtime\Cache\Admin\cad83b8523726c46d784282372d08e08.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003277s ]
+
+[ 2016-02-21T21:25:00+08:00 ] 127.0.0.1 /Admin/OrderManage/cendlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004505s ]
+SQL: SHOW COLUMNS FROM `exp_cend` [ RunTime:0.0263s ]
+SQL: SHOW COLUMNS FROM `exp_cend_status` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `exp_cend` INNER JOIN exp_cend_status on exp_cend.status_id=exp_cend_status.status_id  ORDER BY cend_id desc  [ RunTime:0.0263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000702s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002707s ]
+
+[ 2016-02-21T21:25:08+08:00 ] 127.0.0.1 /Admin/OrderManage/orderlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004437s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `exp_status` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `exp_order` INNER JOIN exp_status on exp_order.order_status_id=exp_status.status_id  ORDER BY order_id desc  [ RunTime:0.0234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000857s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002066s ]
+
+[ 2016-02-21T21:25:12+08:00 ] 127.0.0.1 /Admin/BaseParameter/expCompany
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004032s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE `status` = 1  [ RunTime:0.0268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000406s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-02-21T21:25:18+08:00 ] 127.0.0.1 /Admin/BaseParameter/serverlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005103s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009169s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000838s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003674s ]
+

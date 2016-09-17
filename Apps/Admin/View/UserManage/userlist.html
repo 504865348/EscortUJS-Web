@@ -1,0 +1,27 @@
+<extend name="Public:base" />
+<block name="title"><title>后台管理</title></block>
+<block name="content">    
+<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<td width=50>编号</td>
+		<td width=500>用户</td>
+		<td width=100>注册时间</td>
+		<td width=50>账号状态</td>
+	</tr>
+	<volist name="user" id="vo">
+		<tr>
+			<td>{$vo.user_id}</td>
+			<td>{$vo.user_phone}</td>
+			<td>{$vo.user_regtime|date='y-m-d H:i:s',###}</td>
+			<td><a href="__MODULE__/UserManage/useredit/uid/{$vo.user_id}" title="点击封号或者解封账户">
+			<if condition="$vo.status eq 1">
+			可用
+			<else />
+			不可用
+			</if>
+			</a></td>
+		</tr>
+	</volist>
+</table>
+{$page}
+</block>

@@ -1,0 +1,26 @@
+<extend name="Public:base" />
+<block name="title"><title>后台管理</title></block>
+<block name="heads">
+<script type="text/javascript" src="{$Think.const.JS_URL}LodopFuncs.js"></script>
+<script type="text/javascript">
+	var LODOP; //声明为全局变量  
+	function Preview1() {	
+		LODOP=getLodop();  //JS过程获得控件对象：
+		LODOP.PRINT_INIT("打印控件功能演示_Lodop功能_表单一");
+		LODOP.SET_PRINT_PAGESIZE(0,1000,1000,"A4");
+		//添加打印样式
+		var strBodyStyle="<style>"+document.getElementById("printStyle").innerHTML+"</style>";
+		//设置打印主体内容
+		var HTMLContent=strBodyStyle+"<body>"+document.getElementById("print").innerHTML+"</body>";
+		LODOP.ADD_PRINT_HTM("1mm","1mm","100%","100%",HTMLContent);
+		LODOP.SET_PRINT_MODE("POS_BASEON_PAPER",true);//该语句可使输出以纸张边缘为基点
+		LODOP.PREVIEW();//打印预览		
+	};
+</script>
+
+</block>
+
+<block name="content">
+{:W('Order/orderContent',array('order_id'=>$order_id))}
+<a href="javascript:Preview1()" class="btn bcm w2 center-block mt20">打印</a>
+</block>

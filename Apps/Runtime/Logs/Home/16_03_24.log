@@ -1,0 +1,501 @@
+[ 2016-03-24T10:22:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005144s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013038s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751000997' LIMIT 1   [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0273s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0289s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000623s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001536s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005094s ]
+
+[ 2016-03-24T10:26:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006311s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0284s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 23 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0279s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0278s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0523s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0274s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0275s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0371s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000602s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001291s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005164s ]
+
+[ 2016-03-24T10:28:47+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009825s ]
+NOTIC: [8] Undefined index: user_phone E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003226s ]
+
+[ 2016-03-24T10:28:47+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003156s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007661s ]
+NOTIC: [8] Undefined index: user_phone E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001739s ]
+
+[ 2016-03-24T10:29:08+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003378s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013998s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751000997' LIMIT 1   [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0269s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0287s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0343s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000464s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003942s ]
+
+[ 2016-03-24T10:29:27+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002740s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007692s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0251s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0263s ]
+SQL: SELECT `user_id`,`status` FROM `exp_user` WHERE `user_phone` = '15751000997'  [ RunTime:0.0239s ]
+SQL: INSERT INTO `exp_order` (`order_user_id`,`order_realname`,`order_phone`,`order_expcompany_id`,`order_user_address`,`order_server_id`,`order_comment`,`order_remarks`,`school_area_id`,`school_area_detail_id`,`order_time`) VALUES ('7','黄金鹏','15751000997','1','<alert>2222</alert>','2','ss','ss','0','0','1458786567') [ RunTime:0.0236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002234s ]
+
+[ 2016-03-24T10:29:28+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007395s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0244s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0237s ]
+SQL: SELECT `user_id`,`status` FROM `exp_user` WHERE `user_phone` = '15751000997'  [ RunTime:0.0255s ]
+NOTIC: [8] Undefined index: order_realname E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 112 行.
+NOTIC: [8] Undefined index: order_phone E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 113 行.
+NOTIC: [8] Undefined index: order_expcompany_id E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 114 行.
+NOTIC: [8] Undefined index: order_user_address E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 115 行.
+NOTIC: [8] Undefined index: order_server_id E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 116 行.
+NOTIC: [8] Undefined index: order_comment E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined index: order_remarks E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined index: school_area_id E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined index: school_area_detail_id E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 120 行.
+SQL: INSERT INTO `exp_order` (`order_user_id`,`order_realname`,`order_phone`,`order_expcompany_id`,`order_user_address`,`order_server_id`,`order_comment`,`order_remarks`,`school_area_id`,`school_area_detail_id`,`order_time`) VALUES ('7',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'1458786568') [ RunTime:0.0239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003755s ]
+
+[ 2016-03-24T10:29:29+08:00 ] 127.0.0.1 /Home/Index/submitsuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002798s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002343s ]
+
+[ 2016-03-24T11:19:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004996s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751000997' LIMIT 1   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0435s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0279s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0276s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2016-03-24T11:34:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002275s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005841s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751000997' LIMIT 1   [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0248s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0249s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003992s ]
+
+[ 2016-03-24T11:34:33+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006832s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0255s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0280s ]
+SQL: SELECT `user_id`,`status` FROM `exp_user` WHERE `user_phone` = '15751000997'  [ RunTime:0.0300s ]
+SQL: INSERT INTO `exp_order` (`order_user_id`,`order_realname`,`order_phone`,`order_expcompany_id`,`order_user_address`,`order_server_id`,`order_comment`,`order_remarks`,`school_area_id`,`school_area_detail_id`,`order_time`) VALUES ('7','黄金鹏','15751000997','1','&lt;&gt;','2','ss','aa','0','0','1458790473') [ RunTime:0.0322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000358s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003615s ]
+
+[ 2016-03-24T11:34:35+08:00 ] 127.0.0.1 /Home/Index/submitsuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002180s ]
+
+[ 2016-03-24T12:08:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008261s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751000997' LIMIT 1   [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0274s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0301s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0278s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025474s ]
+
+[ 2016-03-24T15:05:18+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005623s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751005437' LIMIT 1   [ RunTime:0.0274s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0263s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0274s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0287s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004491s ]
+
+[ 2016-03-24T15:05:26+08:00 ] 127.0.0.1 /Home/Index/serverValidate/sid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002416s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006086s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `exp_server` WHERE `server_id` = 3 LIMIT 1   [ RunTime:0.0269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000944s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2016-03-24T20:54:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003997s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012084s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0342s ]
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = '15751005437' LIMIT 1   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0318s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0319s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001876s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002626s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+NOTIC: [8] Undefined variable: name E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003928s ]
+
+[ 2016-03-24T20:56:18+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002106s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005612s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0385s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0292s ]
+SQL: SELECT exp_school_area_detail.school_area_detail_id,exp_school_area_detail.school_area_detail_name,exp_school_area_detail.status,exp_school_area.school_area_id,exp_school_area.school_area_name FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002104s ]
+

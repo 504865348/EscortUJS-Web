@@ -1,0 +1,788 @@
+[ 2016-07-29T00:24:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002372s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0340s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0324s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0309s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2016-07-29T00:24:36+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005651s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0304s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-07-29T00:24:40+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002752s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-07-29T00:24:43+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002078s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004676s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '4'  [ RunTime:0.0311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2016-07-29T00:28:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003114s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0315s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0332s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0299s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-07-29T00:28:33+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = ''  [ RunTime:0.0314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002382s ]
+
+[ 2016-07-29T00:29:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002708s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0327s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0368s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2016-07-29T00:29:05+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002375s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004658s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2016-07-29T00:29:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0308s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0368s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0302s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2016-07-29T00:29:51+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003888s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2016-07-29T00:43:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0307s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0315s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2016-07-29T00:43:28+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003683s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2016-07-29T00:43:30+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004535s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '3'  [ RunTime:0.0347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2016-07-29T00:46:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0316s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2016-07-29T00:46:08+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-07-29T00:46:13+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0302s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '3'  [ RunTime:0.0305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2016-07-29T00:46:31+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002819s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-07-29T00:46:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002118s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0305s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2016-07-29T00:46:44+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003143s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2016-07-29T00:46:48+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002873s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0341s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2016-07-29T00:46:52+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003414s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '3'  [ RunTime:0.0333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2016-07-29T00:47:00+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '4'  [ RunTime:0.0307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002207s ]
+
+[ 2016-07-29T00:49:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0328s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0354s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0315s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0341s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0335s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2016-07-29T00:49:50+08:00 ] 127.0.0.1 /Home/Index/areaValidate?areaId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002100s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003822s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2016-07-29T00:49:55+08:00 ] 127.0.0.1 /Home/Index/areaValidate?areaId=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003141s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001331s ]
+
+[ 2016-07-29T00:50:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0309s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0297s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0306s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0331s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0319s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0297s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0323s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2016-07-29T00:50:30+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002587s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004644s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-07-29T00:50:33+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002733s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2016-07-29T00:50:37+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003274s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '3'  [ RunTime:0.0311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2016-07-29T00:50:41+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0315s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '5'  [ RunTime:0.0309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-07-29T01:01:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003575s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0321s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0339s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0307s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0316s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2016-07-29T01:01:49+08:00 ] 127.0.0.1 /Home/Index/areaValidate?areaId=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0311s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '2'  [ RunTime:0.0326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002965s ]
+
+[ 2016-07-29T01:01:52+08:00 ] 127.0.0.1 /Home/Index/areaValidate?areaId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0324s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2016-07-29T07:17:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002102s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004062s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0341s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0326s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.2669s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.3281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2016-07-29T14:59:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0390s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0426s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0375s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0373s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0376s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0382s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0368s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+

@@ -1,0 +1,206 @@
+<extend name="Public:base" />
+<block name="title"><title>后台管理</title></block>
+<block name="heads">
+<script type="text/javascript" src="{$Think.const.JS_URL}echarts.min.js"></script>
+<script type="text/javascript" src="{$Think.const.LAYDATE_URL}"></script>
+</block>
+<block name="content">
+    <h3 class="mt20 mb20 w112 text-center">目前注册总人数:&nbsp;&nbsp;<span style="color:red;font-size:36px;">{$usernum}</span></h3>
+    <hr />
+    <div class="row">
+    	<div id="user" class="col-sm-6" style="height:400px;"></div>
+    	<div id="order" class="col-sm-6" style="height:400px;"></div>
+    </div>
+    <div class="row mb20">
+    	<div id="server" class="col-sm-6" style="height:400px;"></div>
+    	<div id="cend" class="col-sm-6" style="height:400px;"></div>
+    </div>
+</block>
+
+<block name="js_bot">
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('user'));
+
+// 指定图表的配置项和数据
+var option = {
+	tooltip: {},
+	 grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+	},
+	 toolbox: {
+		feature: {
+			saveAsImage: {}
+		}
+	},
+	legend: {
+		data:['注册用户']
+	},
+	xAxis: {
+		data: ['七日','六日','五日','四日','三日','二日','一日']
+	},
+	yAxis: {},
+	series: [{
+		name: '注册用户',
+		type: 'bar',
+		data: [{$userdata.6},{$userdata.5}, {$userdata.4},{$userdata.3},{$userdata.2},{$userdata.1},{$userdata.0}]
+	}]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('order'));
+//加载显示
+//myChart.showLoading();
+// 指定图表的配置项和数据
+var option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['取快递订单']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['七日','六日','五日','大前天','前天','昨天','今天']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'取快递订单',
+            type:'line',
+            stack: '总量',
+            data:[{$data.6},{$data.5},{$data.4},{$data.3},{$data.2},{$data.1},{$data.0}]
+        }
+     
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('server'));
+//加载显示
+//myChart.showLoading();
+// 指定图表的配置项和数据
+var option = {
+	title : {
+		text: '服务类型',
+		subtext: '当前数据',
+		x:'center'
+	},
+	toolbox: {
+		feature: {
+			saveAsImage: {}
+		}
+	},
+	tooltip : {
+		trigger: 'item',
+		formatter: "{a} <br/>{b} : {c} ({d}%)"
+	},
+	legend: {
+		orient: 'vertical',
+		left: 'left',
+		data: ['{$serverdata[0][server_content]}','{$serverdata[1][server_content]}','{$serverdata[2][server_content]}']
+	},
+	series : [
+		{
+			name: '访问来源',
+			type: 'pie',
+			radius : '55%',
+			center: ['50%', '60%'],
+			data:[
+				{value:{$serverdata[0][num]}, name:'{$serverdata[0][server_content]}'},
+				{value:{$serverdata[1][num]}, name:'{$serverdata[1][server_content]}'},
+				{value:{$serverdata[2][num]}, name:'{$serverdata[2][server_content]}'}
+			],
+			itemStyle: {
+				emphasis: {
+					shadowBlur: 10,
+					shadowOffsetX: 0,
+					shadowColor: 'rgba(0, 0, 0, 0.5)'
+				}
+			}
+		}
+	]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+
+<script type="text/javascript">
+	// 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('cend'));
+	//加载显示
+	//myChart.showLoading();
+	// 指定图表的配置项和数据
+	var option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['送快递订单']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['七日','六日','五日','大前天','前天','昨天','今天']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'送快递订单',
+            type:'line',
+            stack: '总量',
+            data:[{$cenddata.6},{$cenddata.5},{$cenddata.4},{$cenddata.3},{$cenddata.2},{$cenddata.1},{$cenddata.0}]
+        }
+     
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+</block>

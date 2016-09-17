@@ -1,0 +1,208 @@
+[ 2016-02-22T12:00:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002912s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007622s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0883s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002294s ]
+
+[ 2016-02-22T12:01:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005353s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0353s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0342s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001075s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2016-02-22T15:51:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002700s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007755s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0246s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003139s ]
+
+[ 2016-02-22T15:57:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002822s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008304s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0268s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003723s ]
+
+[ 2016-02-22T16:00:26+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002614s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008484s ]
+NOTIC: [8] Undefined index: user_phone E:\phpworkspace\express\Apps\Home\Controller\IndexController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002988s ]
+
+[ 2016-02-22T16:01:42+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005717s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `exp_expcompany`  [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `exp_server`  [ RunTime:0.0316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001102s ]
+NOTIC: [8] Undefined variable: user_id E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+NOTIC: [8] Undefined variable: user_phone E:\phpworkspace\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003209s ]
+
+[ 2016-02-22T16:01:55+08:00 ] 127.0.0.1 /Home/Index/dosubmit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007325s ]
+SQL: SHOW COLUMNS FROM `exp_order` [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0247s ]
+SQL: SELECT `user_id` FROM `exp_user` WHERE `user_phone` = '15751005437'  [ RunTime:0.0249s ]
+SQL: INSERT INTO `exp_order` (`order_user_id`,`order_realname`,`order_phone`,`order_expcompany_id`,`order_user_address`,`order_server_id`,`order_comment`,`order_remarks`,`order_time`) VALUES ('1','申仕杰','15751005437','4','v时的分公司的国防生的','3','是大法官松德股份甩灯歌','是大法官是大法官发送到','1456128115') [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002713s ]
+
+[ 2016-02-22T16:01:57+08:00 ] 127.0.0.1 /Home/Index/submitsuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005150s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003429s ]
+

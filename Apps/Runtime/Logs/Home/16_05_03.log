@@ -1,0 +1,61 @@
+[ 2016-05-03T23:48:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023342s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.025060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048695s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0176s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\wamp\Apache24\htdocs\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0845s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.2303s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0374s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0424s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined variable: user_id E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+NOTIC: [8] Undefined variable: user_phone E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+NOTIC: [8] Undefined variable: name E:\wamp\Apache24\htdocs\express\Apps\Runtime\Cache\Home\400c995c330f1f6ecac6b9102849eb7e.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041101s ]
+
+[ 2016-05-03T23:48:31+08:00 ] 127.0.0.1 /Home/Index/areaValidate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `exp_school_area_detail` INNER JOIN exp_school_area on exp_school_area_detail.school_area_id=exp_school_area.school_area_id  WHERE exp_school_area.school_area_id = '1'  [ RunTime:0.0352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+

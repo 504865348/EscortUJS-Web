@@ -1,0 +1,38 @@
+<extend name="Public:base" />
+<block name="title"><title>送货订单管理</title></block>
+<block name="heads">
+<style>
+.table tr td,
+.table tr th{
+	text-align:center;
+}
+</style>
+</block>
+<block name="content">
+	<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<th width=60>订单编号</th>
+		<th width=60>用户姓名</th>
+		<th width=100>手机号码</th>
+		<th width=200>送货地址</th>
+		<th width=200>寄件人地址</th> 
+		<th width=100>状态</th> 
+		<th width=150>取单时间</th>
+		<th width=150>时间</th>
+	</tr>
+	<volist name="cendlist" id="vo">
+	<tr>
+		<td>{$vo.cend_id}</td>
+		<td>{$vo.realname}</td>
+		<td>{$vo.phone}</td>
+		<td>{$vo.address}</td>
+		<td>{$vo.cender_address}</td>
+		<td><a href="__MODULE__/OrderManage/change_cend_status/cid/{$vo.cend_id}">{$vo.status_name}</a></td>
+		<td>{$vo.get_time|date='Y-m-d H:i:s',###}</td>
+		<td>{$vo.register_time|date='Y-m-d H:i:s',###}</td>
+	</tr>
+	</volist>
+	</table>
+	{$page}<!--分页-->
+</block>		
+	

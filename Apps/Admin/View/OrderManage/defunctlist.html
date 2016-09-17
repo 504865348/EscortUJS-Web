@@ -1,0 +1,17 @@
+<extend name="Public:base" />
+<block name="title"><title>后台管理</title></block>
+<block name="content">
+{:W('Order/orderTable',array('where'=>$where,'Page'=>$Page))}
+{$page}<!--分页-->
+</block>
+<block name="js_bot">	
+<!--jQuery实现全选-->
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#selectAll").click(function(){
+            var isChecked = $(this).prop("checked");
+            $("input#tt").prop("checked", isChecked);
+        });
+    });
+</script>
+</block>

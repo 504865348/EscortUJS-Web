@@ -1,0 +1,11 @@
+<extend name="Public:base" />
+<block name="title"><title>后台管理</title></block>
+<block name="heads">
+<script type="text/javascript" src="{$Think.const.JS_URL}LodopFuncs.js"></script>
+<script type="text/javascript" src="{$Think.const.JS_URL}prints.js"></script>
+</block>
+<block name="content">
+<a href="javascript:Prints()" class="btn bcm w2 mt20 tcw">批量打印</a><br/><br/>
+{:W('Order/orderTable',array('where'=>$where,'Page'=>$Page))}
+{$page}<!--分页-->
+</block>

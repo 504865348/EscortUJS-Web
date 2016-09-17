@@ -1,0 +1,35 @@
+[ 2016-08-19T19:39:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002495s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004849s ]
+SQL: SHOW COLUMNS FROM `exp_user` [ RunTime:0.0336s ]
+NOTIC: [8] Undefined variable: sessionUserName E:\phpproject\express\Apps\Home\Controller\IndexController.class.php 第 22 行.
+SQL: SELECT * FROM `exp_user` WHERE `user_phone` = null LIMIT 1   [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `exp_expcompany` [ RunTime:0.0474s ]
+SQL: SELECT * FROM `exp_expcompany` WHERE ( status=1 )  [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `exp_school_area` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `exp_school_area_detail` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `exp_school_area` WHERE ( status=1 )  [ RunTime:0.0484s ]
+SQL: SELECT * FROM `exp_school_area_detail` WHERE ( status=1 )  [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `exp_server` [ RunTime:0.0302s ]
+SQL: SELECT * FROM `exp_server` WHERE ( status=1 )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `exp_news` [ RunTime:0.0508s ]
+SQL: SELECT * FROM `exp_news` WHERE ( news_title='announcement' ) LIMIT 1   [ RunTime:0.0437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002715s ]
+

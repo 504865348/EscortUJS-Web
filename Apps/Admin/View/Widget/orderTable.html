@@ -1,0 +1,46 @@
+<table class="table table-bordered table-condensed table-striped">
+	<tr>
+		<td style="width:80px"><label><input type="checkbox" name="chk_all" id="selectAll" />全选</label></td>
+		<td style="width:80px">订单编号</td>
+<!-- 						<td>订单用户</td>
+		<td>真实姓名</td>
+		<td>收件人手机</td>
+		<td>快递公司</td> 
+		<td>服务类别</td>
+		-->
+		<td style="width:100px">收件地址</td>
+		<td style="width:100px">订单内容</td>
+		<td style="width:50px">订单备注</td>
+		<td style="width:50px">订单时间</td>
+		<td style="width:80px">查看</td>
+		<td style="width:80px">修改状态</td>
+	</tr>
+	<volist name="orderlist" id="vo">
+	<tr>
+		<td style="width:80px"><input type="checkbox" name="{$vo.order_id}" id="tt" /></td>
+		<td style="width:80px">{$vo.order_id}</td>
+		<!-- <td>{$vo.order_user_id}</td>
+		<td>{$vo.order_realname}</td>
+		<td>{$vo.order_phone}</td>
+		<td>{$vo.order_expcompany_id}</td> 
+		<td>{$vo.order_server_id}</td>						
+		-->
+		<td style="width:100px">{$vo.school_area_name}{$vo.school_area_detail_name}{$vo.order_user_address}</td>
+		<td style="width:100px">{$vo.order_comment}</td>
+		<td style="width:100px">{$vo.order_remarks}</td>
+		<td style="width:100px">{$vo.order_time|date='y-m-d H:i:s',###}</td>
+		<td style="width:80px"><a href="__MODULE__/orderManage/ordercontent/id/{$vo.order_id}">查看</a></td>
+		<td style="width:80px"><a href="__MODULE__/orderManage/changestatus/oid/{$vo.order_id}">
+		<if condition="$vo.status_id eq 1">
+		待取货
+		<elseif condition="$vo.status_id eq 2" />
+		待发货
+		<elseif condition="$vo.status_id eq 3" />
+		待接收
+		<elseif condition="$vo.status_id eq 4" />
+		已处理
+		</if>
+		</a></td>
+	</tr>
+	</volist>
+</table>
